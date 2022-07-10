@@ -13,7 +13,7 @@
             "architecture": "samd",
             "version": "1.0.0",
             "category": "Contributed",
-            "url": "https://github.com/WillBorden/custom-boards/blob/main/Flight_Computer_2.0.zip?raw=true",
+            "url": "https://github.com/WillBorden/custom-boards/raw/main/Flight_Computer_2.0.zip",
             "archiveFileName": "Flight_Computer_2.0.zip",
             "checksum": "SHA-256:b00ef5183137c58c6bac92ec292de44c73abba8f2be380b173ac809fbf87ac35",
             "size": "4896282",
