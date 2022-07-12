@@ -1,0 +1,64 @@
+# Copyright (c) 2014-2017 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+# Modified by Will Borden, 10/7/22, for use with the University of Melbourne ARES Flight Computer
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# Flight Computer (Native USB Port)
+# --------------------------------------
+flight_computer.name=ARES Flight Computer (Native USB Port)
+flight_computer.vid.0=0x2341
+flight_computer.pid.0=0x804d
+flight_computer.vid.1=0x2341
+flight_computer.pid.1=0x004d
+flight_computer.vid.2=0x2341
+flight_computer.pid.2=0x824d
+flight_computer.vid.3=0x2341
+flight_computer.pid.3=0x024d
+flight_computer.upload_port.0.vid=0x2341
+flight_computer.upload_port.0.pid=0x804d
+flight_computer.upload_port.1.vid=0x2341
+flight_computer.upload_port.1.pid=0x004d
+flight_computer.upload_port.2.vid=0x2341
+flight_computer.upload_port.2.pid=0x824d
+flight_computer.upload_port.3.vid=0x2341
+flight_computer.upload_port.3.pid=0x024d
+flight_computer.upload_port.4.board=flight_computer
+
+flight_computer.upload.tool=bossac
+flight_computer.upload.tool.default=bossac
+flight_computer.upload.tool.network=arduino_ota
+flight_computer.upload.protocol=sam-ba
+flight_computer.upload.maximum_size=262144
+flight_computer.upload.maximum_data_size=32768
+flight_computer.upload.use_1200bps_touch=true
+flight_computer.upload.wait_for_upload_port=true
+flight_computer.upload.native_usb=true
+flight_computer.build.mcu=cortex-m0plus
+flight_computer.build.f_cpu=48000000L
+flight_computer.build.usb_product="Flight Computer 2.0"
+flight_computer.build.usb_manufacturer="ARES"
+flight_computer.build.board=FLIGHT_COMPUTER
+flight_computer.build.core=arduino
+flight_computer.build.extra_flags=-DCRYSTALLESS -D__SAMD21G18A__ {build.usb_flags}
+flight_computer.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+flight_computer.build.openocdscript=openocd_scripts/arduino_zero.cfg
+flight_computer.build.variant=flight_computer
+flight_computer.build.variant_system_lib=
+flight_computer.build.vid=0x2341
+flight_computer.build.pid=0x804d
+flight_computer.bootloader.tool=openocd
+flight_computer.bootloader.tool.default=openocd
+flight_computer.bootloader.file=zero/samd21_sam_ba.bin
+
+
